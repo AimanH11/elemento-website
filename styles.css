@@ -1031,7 +1031,7 @@ section {
 }
 
 .video-placeholder:hover {
-    background: var(--cream);
+    background: var(--light-beige);
     border-color: var(--accent-red);
 }
 
@@ -1158,7 +1158,7 @@ section {
 }
 
 .coach-compact:hover {
-    background: var(--cream);
+    background: var(--light-beige);
     transform: translateY(-2px);
     box-shadow: var(--shadow);
 }
