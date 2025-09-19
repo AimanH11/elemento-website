@@ -6,6 +6,7 @@
     <title>Elemento Fitness - The Ancient Arts</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -23,15 +24,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <div class="logo-icon">
-                    <div class="logo-line line-1"></div>
-                    <div class="logo-line line-2"></div>
-                    <div class="logo-line line-3"></div>
-                </div>
-                <div class="logo-text">
-                    <h1>ELEMENTO</h1>
-                    <p>THE ANCIENT ARTS</p>
-                </div>
+                <img src="images/logo.png" alt="Elemento – The Ancient Arts" class="brand-logo">
             </div>
             
             <div class="nav-menu" id="nav-menu">
@@ -116,40 +109,62 @@
                     <div class="hero-image-container">
                         <img src="images/hero.jpg" alt="Elemento hero" class="main-hero-image">
                         <div class="floating-cards">
-                            <div class="floating-card card-1 card-fire">
+                            <div class="floating-card card-1 card-fire" data-label="Fire">
                                 <div class="card-icon">
                                     <i class="fas fa-fire"></i>
                                 </div>
-                                <div class="card-text">
-                                    <span class="card-title">Fire</span>
-                                    <span class="card-subtitle">Power • Intensity</span>
+                                <div class="element-tooltip">
+                                    <div class="tooltip-header fire">FIRE</div>
+                                    <ul>
+                                        <li>Boxing</li>
+                                        <li>Kick Boxing</li>
+                                        <li>Muay Thai</li>
+                                        <li>MMA</li>
+                                        <li>Karate</li>
+                                        <li>Jiu Jitsu</li>
+                                        <li>Krav-Maga</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="floating-card card-2 card-earth">
+                            <div class="floating-card card-2 card-earth" data-label="Earth">
                                 <div class="card-icon">
                                     <i class="fas fa-mountain"></i>
                                 </div>
-                                <div class="card-text">
-                                    <span class="card-title">Earth</span>
-                                    <span class="card-subtitle">Strength • Stability</span>
+                                <div class="element-tooltip">
+                                    <div class="tooltip-header earth">EARTH</div>
+                                    <ul>
+                                        <li>Weightlifting</li>
+                                        <li>Cross-Fit</li>
+                                        <li>Rock Climbing</li>
+                                        <li>Calisthenics</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="floating-card card-3 card-water">
+                            <div class="floating-card card-3 card-water" data-label="Water">
                                 <div class="card-icon">
                                     <i class="fas fa-water"></i>
                                 </div>
-                                <div class="card-text">
-                                    <span class="card-title">Water</span>
-                                    <span class="card-subtitle">Flow • Endurance</span>
+                                <div class="element-tooltip">
+                                    <div class="tooltip-header water">WATER</div>
+                                    <ul>
+                                        <li>Swimming</li>
+                                        <li>Hydrotherapy</li>
+                                        <li>Scuba Diving</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="floating-card card-4 card-air">
+                            <div class="floating-card card-4 card-air" data-label="Air">
                                 <div class="card-icon">
                                     <i class="fas fa-wind"></i>
                                 </div>
-                                <div class="card-text">
-                                    <span class="card-title">Air</span>
-                                    <span class="card-subtitle">Agility • Balance</span>
+                                <div class="element-tooltip">
+                                    <div class="tooltip-header air">AIR</div>
+                                    <ul>
+                                        <li>Yoga</li>
+                                        <li>Pilates</li>
+                                        <li>Sports</li>
+                                        <li>Therapy</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -168,6 +183,31 @@
         </div>
         
         <div class="benefit-types">
+              <div class="benefit-type">
+                <div class="benefit-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h3>For Coaches</h3>
+                <p class="benefit-subtitle">Build your client base and grow your business</p>
+                <ul>
+                    <li><strong>Client Discovery:</strong> Connect with motivated learners seeking your expertise</li>
+                    <li><strong>Flexible Scheduling:</strong> Set your own hours and availability</li>
+                    <li><strong>Secure Payments:</strong> Get paid within 24 hours of completed sessions</li>
+                    <li><strong>Professional Growth:</strong> Access to training resources and certifications</li>
+                    <li><strong>Community Support:</strong> Network with other fitness professionals</li>
+                </ul>
+                <div class="benefit-stats">
+                    <div class="stat">
+                        <span class="stat-number">£2,500</span>
+                        <span class="stat-label">Average monthly earnings</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">85%</span>
+                        <span class="stat-label">Coach retention rate</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary">Become a Coach</button>
+            </div>
             <div class="benefit-type">
                 <div class="benefit-icon">
                     <i class="fas fa-building"></i>
@@ -194,31 +234,7 @@
                 <button class="btn btn-primary">Join as a Gym</button>
             </div>
             
-            <div class="benefit-type">
-                <div class="benefit-icon">
-                    <i class="fas fa-user-tie"></i>
-                </div>
-                <h3>For Coaches</h3>
-                <p class="benefit-subtitle">Build your client base and grow your business</p>
-                <ul>
-                    <li><strong>Client Discovery:</strong> Connect with motivated learners seeking your expertise</li>
-                    <li><strong>Flexible Scheduling:</strong> Set your own hours and availability</li>
-                    <li><strong>Secure Payments:</strong> Get paid within 24 hours of completed sessions</li>
-                    <li><strong>Professional Growth:</strong> Access to training resources and certifications</li>
-                    <li><strong>Community Support:</strong> Network with other fitness professionals</li>
-                </ul>
-                <div class="benefit-stats">
-                    <div class="stat">
-                        <span class="stat-number">£2,500</span>
-                        <span class="stat-label">Average monthly earnings</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">85%</span>
-                        <span class="stat-label">Coach retention rate</span>
-                    </div>
-                </div>
-                <button class="btn btn-primary">Become a Coach</button>
-            </div>
+          
             
             <div class="benefit-type">
                 <div class="benefit-icon">
@@ -352,6 +368,9 @@
                             <span class="stat-label">Active Members</span>
                         </div>
                     </div>
+                    <div class="about-actions">
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
                 </div>
                 <div class="about-video">
                     <div class="video-placeholder">
@@ -365,132 +384,150 @@
 
   
 
-    <!-- Featured Coaches Section (Redesigned) -->
-    <section class="featured-coaches-compact">
+    <!-- Featured Coaches Section (People Cards) -->
+    <section class="featured-coaches-people">
         <div class="container">
             <div class="section-header">
                 <h2>Meet Our Expert Coaches</h2>
                 <p>Hand-picked professionals ready to guide your fitness journey</p>
             </div>
             
-            <div class="coaches-compact-grid">
-                <div class="coach-compact">
-                    <div class="coach-avatar">
-                        <img src="https://via.placeholder.com/80x80/4a90e2/ffffff?text=AN" alt="Alex Nathanson">
+            <div class="coaches-people-grid">
+                <div class="coach-person-card">
+                    <div class="coach-photo">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=400&q=80" alt="Alex Nathanson">
+                        <div class="coach-element-badge fire">Fire</div>
                     </div>
-                    <div class="coach-details">
-                        <h4>Alex Nathanson</h4>
-                        <p>Yoga & Sports Therapy</p>
-                        <div class="coach-rating">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                    <div class="coach-info">
+                        <h3>Alex Nathanson</h3>
+                        <p class="coach-specialty">Yoga & Sports Therapy</p>
+                        <p class="coach-bio">Certified yoga instructor with 8+ years experience in therapeutic movement and injury rehabilitation.</p>
+                        <div class="coach-stats">
+                            <div class="stat">
+                                <span class="stat-number">4.9</span>
+                                <span class="stat-label">Rating</span>
                             </div>
-                            <span>£100/hr</span>
+                            <div class="stat">
+                                <span class="stat-number">£100</span>
+                                <span class="stat-label">Per Hour</span>
+                            </div>
                         </div>
+                        <button class="btn btn-outline">View Profile</button>
                     </div>
                 </div>
 
-                <div class="coach-compact">
-                    <div class="coach-avatar">
-                        <img src="https://via.placeholder.com/80x80/e74c3c/ffffff?text=AA" alt="Anna Afonina">
+                <div class="coach-person-card">
+                    <div class="coach-photo">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0c1c0a1a8b8?auto=format&fit=crop&w=400&q=80" alt="Anna Afonina">
+                        <div class="coach-element-badge earth">Earth</div>
                     </div>
-                    <div class="coach-details">
-                        <h4>Anna Afonina</h4>
-                        <p>Women's Health & Strength</p>
-                        <div class="coach-rating">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                    <div class="coach-info">
+                        <h3>Anna Afonina</h3>
+                        <p class="coach-specialty">Women's Health & Strength</p>
+                        <p class="coach-bio">Specialized in women's fitness, pre/post-natal training, and strength conditioning for all levels.</p>
+                        <div class="coach-stats">
+                            <div class="stat">
+                                <span class="stat-number">4.8</span>
+                                <span class="stat-label">Rating</span>
                             </div>
-                            <span>£65/hr</span>
+                            <div class="stat">
+                                <span class="stat-number">£65</span>
+                                <span class="stat-label">Per Hour</span>
+                            </div>
                         </div>
+                        <button class="btn btn-outline">View Profile</button>
                     </div>
                 </div>
 
-                <div class="coach-compact">
-                    <div class="coach-avatar">
-                        <img src="https://via.placeholder.com/80x80/2ecc71/ffffff?text=AZ" alt="Ashka Zasada">
+                <div class="coach-person-card">
+                    <div class="coach-photo">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Ashka Zasada">
+                        <div class="coach-element-badge air">Air</div>
                     </div>
-                    <div class="coach-details">
-                        <h4>Ashka Zasada</h4>
-                        <p>Yoga & Embodiment</p>
-                        <div class="coach-rating">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                    <div class="coach-info">
+                        <h3>Ashka Zasada</h3>
+                        <p class="coach-specialty">Yoga & Embodiment</p>
+                        <p class="coach-bio">Mind-body connection specialist focusing on breathwork, meditation, and mindful movement practices.</p>
+                        <div class="coach-stats">
+                            <div class="stat">
+                                <span class="stat-number">4.9</span>
+                                <span class="stat-label">Rating</span>
                             </div>
-                            <span>£90/hr</span>
+                            <div class="stat">
+                                <span class="stat-number">£90</span>
+                                <span class="stat-label">Per Hour</span>
+                            </div>
                         </div>
+                        <button class="btn btn-outline">View Profile</button>
                     </div>
                 </div>
 
-                <div class="coach-compact">
-                    <div class="coach-avatar">
-                        <img src="https://via.placeholder.com/80x80/f39c12/ffffff?text=FG" alt="Francesco Gallo">
+                <div class="coach-person-card">
+                    <div class="coach-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Francesco Gallo">
+                        <div class="coach-element-badge earth">Earth</div>
                     </div>
-                    <div class="coach-details">
-                        <h4>Francesco Gallo</h4>
-                        <p>Personal Training</p>
-                        <div class="coach-rating">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                    <div class="coach-info">
+                        <h3>Francesco Gallo</h3>
+                        <p class="coach-specialty">Personal Training</p>
+                        <p class="coach-bio">Elite personal trainer with expertise in body transformation, muscle building, and athletic performance.</p>
+                        <div class="coach-stats">
+                            <div class="stat">
+                                <span class="stat-number">4.7</span>
+                                <span class="stat-label">Rating</span>
                             </div>
-                            <span>£100/hr</span>
+                            <div class="stat">
+                                <span class="stat-number">£100</span>
+                                <span class="stat-label">Per Hour</span>
+                            </div>
                         </div>
+                        <button class="btn btn-outline">View Profile</button>
                     </div>
                 </div>
 
-                <div class="coach-compact">
-                    <div class="coach-avatar">
-                        <img src="https://via.placeholder.com/80x80/9b59b6/ffffff?text=AP" alt="Adam Prempeh">
+                <div class="coach-person-card">
+                    <div class="coach-photo">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80" alt="Adam Prempeh">
+                        <div class="coach-element-badge fire">Fire</div>
                     </div>
-                    <div class="coach-details">
-                        <h4>Adam Prempeh</h4>
-                        <p>Functional Fitness</p>
-                        <div class="coach-rating">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                    <div class="coach-info">
+                        <h3>Adam Prempeh</h3>
+                        <p class="coach-specialty">Functional Fitness</p>
+                        <p class="coach-bio">Boxing, Strength and Conditioning, functional movements and Cardio Zone based training specialist.</p>
+                        <div class="coach-stats">
+                            <div class="stat">
+                                <span class="stat-number">4.8</span>
+                                <span class="stat-label">Rating</span>
                             </div>
-                            <span>£75/hr</span>
+                            <div class="stat">
+                                <span class="stat-number">£75</span>
+                                <span class="stat-label">Per Hour</span>
+                            </div>
                         </div>
+                        <button class="btn btn-outline">View Profile</button>
                     </div>
                 </div>
 
-                <div class="coach-compact">
-                    <div class="coach-avatar">
-                        <img src="https://via.placeholder.com/80x80/1abc9c/ffffff?text=SG" alt="Saber Ghribi">
+                <div class="coach-person-card">
+                    <div class="coach-photo">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Saber Ghribi">
+                        <div class="coach-element-badge fire">Fire</div>
                     </div>
-                    <div class="coach-details">
-                        <h4>Saber Ghribi</h4>
-                        <p>Combat Sports</p>
-                        <div class="coach-rating">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                    <div class="coach-info">
+                        <h3>Saber Ghribi</h3>
+                        <p class="coach-specialty">Combat Sports</p>
+                        <p class="coach-bio">Professional martial arts instructor specializing in MMA, kickboxing, and self-defense techniques.</p>
+                        <div class="coach-stats">
+                            <div class="stat">
+                                <span class="stat-number">4.9</span>
+                                <span class="stat-label">Rating</span>
                             </div>
-                            <span>£75/hr</span>
+                            <div class="stat">
+                                <span class="stat-number">£75</span>
+                                <span class="stat-label">Per Hour</span>
+                            </div>
                         </div>
+                        <button class="btn btn-outline">View Profile</button>
                     </div>
                 </div>
             </div>
@@ -675,15 +712,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <div class="logo-icon">
-                            <div class="logo-line line-1"></div>
-                            <div class="logo-line line-2"></div>
-                            <div class="logo-line line-3"></div>
-                        </div>
-                        <div class="logo-text">
-                            <h3>ELEMENTO </h3>
-                            <p>THE ANCIENT ARTS</p>
-                        </div>
+                        <img src="logo.png" alt="Elemento – The Ancient Arts" class="brand-logo brand-logo--footer">
                     </div>
                     <div class="social-links">
                         <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
