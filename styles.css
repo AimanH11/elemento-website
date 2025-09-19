@@ -1425,7 +1425,7 @@ section {
     left: 0;
     right: 0;
     height: 4px;
-    background: var(--accent-red);
+    background: var(--border-color);
 }
 
 .benefit-type:hover {
@@ -1436,7 +1436,7 @@ section {
 .benefit-type .benefit-icon {
     width: 80px;
     height: 80px;
-    background: var(--accent-red);
+    background: linear-gradient(135deg, var(--text-dark) 0%, var(--dark-brown) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1457,7 +1457,7 @@ section {
 }
 
 .benefit-subtitle {
-    color: var(--accent-red);
+    color: var(--accent-orange);
     font-weight: 600;
     margin-bottom: 2rem;
     font-size: 1.1rem;
@@ -1503,7 +1503,7 @@ section {
     display: block;
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--accent-red);
+    color: var(--text-dark);
     margin-bottom: 0.5rem;
 }
 
